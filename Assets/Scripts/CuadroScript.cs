@@ -8,25 +8,15 @@
 /// </summary>
 public class CuadroScript : MonoBehaviour
 {
-    [Tooltip("Rigidbody del objeto que quieres lanzar.")]
     public Rigidbody target;
-    [Tooltip("Transform de la pared (usado como origen para calcular la dirección hacia afuera).")]
     public Transform wall;
-    [Tooltip("Magnitud de la fuerza (Impulse).")]
     public float force = 8f;
-    [Tooltip("Componente vertical añadida a la dirección.")]
     public string playerTag = "Player";
-    [Tooltip("Si true, solo se activa una vez.")]
-    public bool oneShot = true;
     bool triggered = false;
     public bool derechaOIzquierda = true;
 
     void OnTriggerEnter(Collider other)
     {
-        if (!other.CompareTag(playerTag))
-        {
-            return;
-        }
         if (triggered == true)
         {
             return;
