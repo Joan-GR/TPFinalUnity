@@ -27,6 +27,10 @@ public class CuadroScript : MonoBehaviour
         {
             return;
         }
+        if (triggered == true)
+        {
+            return;
+        }
         else if (derechaOIzquierda == true)
         {
             // dirección desde la pared hacia el objeto
