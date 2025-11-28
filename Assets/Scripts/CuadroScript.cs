@@ -11,7 +11,6 @@ public class CuadroScript : MonoBehaviour
     public Rigidbody target;
     public Transform wall;
     public float force = 8f;
-    public string playerTag = "Player";
     bool triggered = false;
     public bool derechaOIzquierda = true;
 
